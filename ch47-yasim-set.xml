@@ -15,7 +15,6 @@ CH-47 Chinook simulation config.
   <fuel-fraction>0.8</fuel-fraction>
 
   <sound>
-   <audible>true</audible>
    <path>Aircraft/bell206/bell206-sound.xml</path>
   </sound>
 
