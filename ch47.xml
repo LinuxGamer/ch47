@@ -1,0 +1,149 @@
+<airplane mass="3090">
+
+<!-- Approach configuration -->
+<approach speed="47" aoa="16">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+  <control-setting axis="/controls/flight/flaps" value="1.0"/>
+</approach>
+
+<!-- Cruise configuration -->
+<cruise speed="123" alt="0">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+  <control-setting axis="/controls/flight/flaps" value="0.0"/>
+</cruise>
+
+
+<rotor name="main" x="2.5" y="0.0" z="2.6" nx="-0.00" ny="0" nz="1." fx="1" fy="0" fz="0"
+  maxcollective="15.8" mincollective="-2.2"
+  mincyclicele="-7.6" maxcyclicele="7.6"
+  mincyclicail="-8.94" maxcyclicail="8.94"
+  diameter="9.98" numblades="4" weightperblade="55" relbladecenter="0.5"
+  dynamic="1" rpm="442" rellenflaphinge="0.05" delta3="0"
+  translift=".1" ccw="true" delta=".40"
+  pitch_a="15.8" forceatpitch_a="3518"
+  pitch_b="15.8" poweratpitch_b="530"
+  flapmin="-25"
+  flapmax="25"
+  flap0="-5"
+  flap0factor="0"
+  poweratpitch_0="53"
+  notorque="true"
+  dragfactor="5"
+>
+  <control-input axis="/controls/flight/rudder" control="CYCLICAIL" 
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.5" dst1="0.5"/>
+  <control-input axis="/controls/flight/aileron" control="CYCLICAIL" 
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.3" dst1="0.3"/>
+  <control-input axis="/controls/flight/elevator" control="COLLECTIVE" invert="true"
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.3" dst1="0.3"/>
+  <control-input axis="/controls/engines/engine[1]/throttle" control="COLLECTIVE"
+                 src0="-0.0" src1="1.0"
+                 dst0="-1.0" dst1="1.0"/>
+  <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORENGINEON"/>
+</rotor>
+
+<rotor name="main2" x="-7.5" y="0.0" z="2.6" nx="-0.00" ny="0" nz="1." fx="1" fy="0" fz="0"
+  maxcollective="15.8" mincollective="-2.2"
+  mincyclicele="-7.6" maxcyclicele="7.6"
+  mincyclicail="-8.94" maxcyclicail="8.94"
+  diameter="9.98" numblades="4" weightperblade="55" relbladecenter="0.5"
+  dynamic="1" rpm="442" rellenflaphinge="0.05" delta3="0"
+  translift=".1" ccw="false" delta=".40"
+  pitch_a="15.8" forceatpitch_a="3518"
+  pitch_b="15.8" poweratpitch_b="530"
+  flapmin="-25"
+  flapmax="25"
+  flap0="-5"
+  flap0factor="0"
+  poweratpitch_0="53"
+  notorque="true"
+  dragfactor="5"
+>
+  <control-input axis="/controls/flight/rudder" control="CYCLICAIL" invert="true"
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.5" dst1="0.5"/>
+  <control-input axis="/controls/flight/aileron" control="CYCLICAIL" 
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.3" dst1="0.3"/>
+  <control-input axis="/controls/flight/elevator" control="COLLECTIVE" 
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.3" dst1="0.3"/>
+  <control-input axis="/controls/engines/engine[1]/throttle" control="COLLECTIVE"
+                 src0="-0.0" src1="1.0"
+                 dst0="-1.0" dst1="1.0"/>
+  <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORENGINEON"/>
+</rotor>
+
+
+
+
+
+<cockpit x="-1.88" y=".33" z="0.6"/>
+
+<fuselage ax="-.17" ay="0" az="-.51" bx="-7.16" by="0" bz=".17"
+          width="0.1" taper="0.2" midpoint="0.3"/>
+
+
+
+
+
+<vstab x="-7" y="0" z="0" taper="1"
+       length="3" chord="2" sweep="0">
+  
+</vstab>
+
+
+<gear x="-1" y="0" z="-1.5" compression=".4"> <!-- nose -->
+  <control-input axis="/controls/flight/rudder" control="STEER"
+                 src0="-1.0" src1="1.0"
+                 dst0="-0.1" dst1="0.1"/>
+</gear>
+
+<gear x="-2.82" y="1.15" z="-1.36" compression=".3"> <!-- left main -->
+  <control-input axis="/controls/gear/wheel[0]/brake" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/parking-brake" control="BRAKE" split="true"/>
+</gear>
+
+<gear x="-2.82" y="-1.15" z="-1.36" compression=".3"> <!-- left main -->
+  <control-input axis="/controls/gear/wheel[1]/brake" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/parking-brake" control="BRAKE" split="true"/>
+</gear>
+
+
+
+<gear x="-0" y="0" z="-1.5" compression=".4">
+</gear>
+
+<gear x="-4.82" y="3.15" z="-1.36" compression=".3"> <!-- left main -->
+</gear>
+
+<gear x="-4.82" y="-3.15" z="-1.36" compression=".3"> <!-- left main -->
+</gear>
+
+<gear x="10" y="0" z="-1.5" compression=".4">
+</gear>
+
+<gear x="-14.82" y="13.15" z="-1.36" compression=".3"> <!-- left main -->
+</gear>
+
+<gear x="-14.82" y="-13.15" z="-1.36" compression=".3"> <!-- left main -->
+</gear>
+
+
+<tank x="-2.47" y="1.36" z=".68" capacity="75"/>
+<tank x="-2.47" y="-1.36" z=".68" capacity="75"/> 
+
+<ballast x="-2.0" y=".33" z="1" mass="180"/> <!-- pilot -->
+<ballast x="-2.0" y="-.33" z="1" mass="180"/> <!-- passenger -->
+<ballast x="-1.0" y="-.0" z="1" mass="200"/> <!-- cockpit -->
+
+<ballast x="-2.75" y="-.0" z="1" mass="1820"/> <!-- fuselage -->
+
+
+
+</airplane>
