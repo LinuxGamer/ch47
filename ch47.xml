@@ -105,13 +105,13 @@
 </gear>
 
 <gear x="-2.82" y="1.15" z="-1.36" compression=".3"> <!-- left main -->
-  <control-input axis="/controls/gear/wheel[0]/brake" control="BRAKE" split="true"/>
-  <control-input axis="/controls/gear/parking-brake" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
 <gear x="-2.82" y="-1.15" z="-1.36" compression=".3"> <!-- left main -->
-  <control-input axis="/controls/gear/wheel[1]/brake" control="BRAKE" split="true"/>
-  <control-input axis="/controls/gear/parking-brake" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
 
