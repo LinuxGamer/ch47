@@ -16,7 +16,7 @@ CH-47 Chinook simulation config.
 
   <sound>
    <audible>true</audible>
-   <path>Aircraft/bo105/bo105-sound.xml</path>
+   <path>Aircraft/bell206/bell206-sound.xml</path>
   </sound>
 
   <panel>
