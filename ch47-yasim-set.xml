@@ -40,6 +40,14 @@ CH-47 Chinook simulation config.
    </config>
   </view>
 
+  <help>
+    <title>CH-47</title>
+    <key>
+      <name>{ }</name>
+      <desc>shutdown/start turbines</desc>
+    </key>
+  </help>
+
  </sim>
 
  <yasim>
