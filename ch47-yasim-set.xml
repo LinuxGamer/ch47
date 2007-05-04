@@ -206,7 +206,7 @@ Not realistic, only proof of concept for tandem rotor
 			</config>
 		</view>
 
-		<view n="6">
+		<view n="100">
 			<name>Belly View</name>
 			<type>lookfrom</type>
 			<internal archive="y">true</internal>
@@ -235,8 +235,6 @@ Not realistic, only proof of concept for tandem rotor
 				<default-field-of-view-deg>55</default-field-of-view-deg>
 			</config>
 		</view>
-
-		<number-views type="int" archive="y">7</number-views>
 
 		<hud>
 			<enable3d>false</enable3d>
