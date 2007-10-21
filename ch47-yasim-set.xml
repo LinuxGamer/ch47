@@ -10,12 +10,12 @@ Not realistic, only proof of concept for tandem rotor
 <PropertyList>
     <sim>
         <description>CH-47 Chinook</description>
-        <author>Melchior Franz, Maik Justus (FDM)</author>
+        <author>Melchior Franz, Maik Justus (FDM),Syd Adams (3D)</author>
         <status>alpha</status>
         <aircraft-version>0.1</aircraft-version>
 
         <flight-model>yasim</flight-model>
-        <aero>ch47</aero>
+        <aero>ch47d</aero>
         <fuel-fraction>0.8</fuel-fraction>
 
 
@@ -35,19 +35,30 @@ Not realistic, only proof of concept for tandem rotor
         <model>
             <path archive="y">Aircraft/ch47/Models/CH47.xml</path>
         </model>
+        <startup>
+            <splash-texture>Aircraft/ch47/ch47-splash.rgb</splash-texture>
+        </startup>
 
         <view n="0">
             <internal archive="y">true</internal>
             <config>
                 <x-offset-m archive="y">-0.7</x-offset-m>
                 <!--right-->
-                <y-offset-m archive="y">0.5</y-offset-m>
+                <y-offset-m archive="y">0.499</y-offset-m>
                 <!--up-->
-                <z-offset-m archive="y">-5.7</z-offset-m>
+                <z-offset-m archive="y">-6.009</z-offset-m>
                 <!--back-->
-                <pitch-offset-deg>-5</pitch-offset-deg>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+                <default-field-of-view-deg>60</default-field-of-view-deg>
             </config>
         </view>
+
+        <current-view>
+            <field-of-view>60.0</field-of-view>
+        </current-view>
+
+        <chase-distance-m>-35</chase-distance-m>
+
 
         <hud>
             <enable3d>false</enable3d>
@@ -99,7 +110,12 @@ Not realistic, only proof of concept for tandem rotor
                 <throttle>1</throttle>
             </engine>
         </engines>
-
+        <gear>
+            <brake-parking>1.0</brake-parking>
+        </gear>
+        <rotor>
+            <pitch>1</pitch>
+        </rotor>
         <lighting>
             <strobe type="bool">true</strobe>
             <beacon type="bool">true</beacon>
@@ -117,5 +133,8 @@ Not realistic, only proof of concept for tandem rotor
         <main>
             <rpm type="double">0</rpm>
         </main>
+        <main2>
+            <rpm type="double">0</rpm>
+        </main2>
     </rotors>
 </PropertyList>
