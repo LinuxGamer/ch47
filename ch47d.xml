@@ -55,8 +55,8 @@ Rr Rotor hub 4 degree forward pitch
         delta="0.1"
         pitch-a="10"
         pitch-b="15"
-        flapmin="-18"
-        flapmax="18"
+        flapmin="-15"
+        flapmax="15"
         flap0="-5"
         flap0factor="0"
         notorque="0"
@@ -95,7 +95,7 @@ Rr Rotor hub 4 degree forward pitch
                        dst0="-0.8" dst1="0.8"/>
         <control-input axis="controls/flight/aileron" control="CYCLICAIL"
                        src0="-1.0" src1="1.0"
-                       dst0="-0.3" dst1="0.3"/>
+                       dst0="-0.2" dst1="0.2"/>
         <control-input axis="controls/flight/elevator" control="COLLECTIVE"
                        src0="-1.0" src1="1.0"
                        dst0="0.5" dst1="-0.5"/>
@@ -136,8 +136,8 @@ Rr Rotor hub 4 degree forward pitch
         delta="0.1"
         pitch-a="10"
         pitch-b="15"
-        flapmin="-18"
-        flapmax="18"
+        flapmin="-15"
+        flapmax="15"
         flap0="-5"
         flap0factor="0"
         notorque="0"
@@ -176,11 +176,11 @@ Rr Rotor hub 4 degree forward pitch
             control="CYCLICAIL"
             invert="true"
             src0="-1.0" src1="1.0"
-            dst0="-0.8" dst1="0.81"/>
+            dst0="-0.8" dst1="0.8"/>
         <control-input axis="controls/flight/aileron"
             control="CYCLICAIL"
             src0="-1.0" src1="1.0"
-            dst0="-0.3" dst1="0.3"/>
+            dst0="-0.2" dst1="0.2"/>
         <control-input axis="controls/flight/elevator"
             control="COLLECTIVE"
             src0="-1.0" src1="1.0"
@@ -201,8 +201,8 @@ Rr Rotor hub 4 degree forward pitch
         rotorgear-friction="1.4"
         engine-prop-factor="0.03"
         engine-accel-limit="10"
-        yasimdragfactor="10"
-        yasimliftfactor="140">
+        yasimdragfactor="15"
+        yasimliftfactor="240">
 
         <control-input axis="controls/engines/engine[0]/magnetos"
             control="ROTORGEARENGINEON"/>

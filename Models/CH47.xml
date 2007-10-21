@@ -3,6 +3,38 @@
     <path>ch47.ac</path>
 
     <animation>
+        <name>Painted</name>
+         <object-name>Fuselage</object-name>
+         <object-name>Ramp</object-name>
+         <object-name>Ldoor</object-name>
+         <object-name>Rdoor</object-name>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Painted</object-name>
+        <condition>
+            <equals>
+                <property>sim/model/variant</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <texture-prop>sim/model/CH47/texture[0]</texture-prop>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Painted</object-name>
+        <condition>
+            <equals>
+                <property>sim/model/variant</property>
+                <value>1</value>
+            </equals>
+        </condition>
+        <texture-prop>sim/model/CH47/texture[1]</texture-prop>
+    </animation>
+
+    <animation>
         <type>rotate</type>
         <object-name>Hub1</object-name>
         <object-name>Blade.11</object-name>
