@@ -32,7 +32,6 @@ CH-47 Chinook simulation config.
 
         <model>
             <path archive="y">Aircraft/ch47/Models/CH47.xml</path>
-            <variant type="int">0</variant><!-- change this to start with the following textures-->
             <CH47>
                 <texture type="string" n="0">paint1.rgb</texture>
                 <texture type="string" n="1">paint2.rgb</texture>
