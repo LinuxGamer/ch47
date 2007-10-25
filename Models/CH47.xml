@@ -35,6 +35,27 @@
     </animation>
 
     <animation>
+        <type>material</type>
+        <object-name>Painted</object-name>
+        <condition>
+            <equals>
+                <property>sim/model/variant</property>
+                <value>2</value>
+            </equals>
+        </condition>
+        <texture-prop>sim/model/CH47/texture[2]</texture-prop>
+    </animation>
+
+    <animation>
+        <type>shader</type>
+        <shader>chrome</shader>
+        <texture>Aircraft/ch47/Models/chrome1.rgb</texture>
+        <object-name>Wshield</object-name>
+        <object-name>Rdoor.glass</object-name>
+        <object-name>Ldoor.glass</object-name>
+    </animation>
+
+    <animation>
         <type>rotate</type>
         <object-name>Hub1</object-name>
         <object-name>Blade.11</object-name>
@@ -230,7 +251,7 @@
         <object-name>Hub2.pitchlink</object-name>
         <object-name>Hub2.pitchlink.001</object-name>
         <object-name>Hub2.pitchlink.002</object-name>
-        <property>rotors/main2/tilt/pitch-deg</property>
+        <property>rotors/tail/tilt/pitch-deg</property>
         <center>
             <x-m>6.045</x-m>
             <y-m>0</y-m>
@@ -247,7 +268,7 @@
         <type>rotate</type>
         <object-name>Hub2</object-name>
         <object-name>Hub2.pitchlink</object-name>
-        <property>rotors/main2/blade/position-deg</property>
+        <property>rotors/tail/blade/position-deg</property>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -263,7 +284,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.21</object-name>
-        <property>rotors/main2/blade/position-deg</property>
+        <property>rotors/tail/blade/position-deg</property>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -279,7 +300,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.21</object-name>
-        <property>rotors/main2/blade/incidence-deg</property>
+        <property>rotors/tail/blade/incidence-deg</property>
         <axis>
             <x>1</x>
             <y>0</y>
@@ -295,7 +316,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.21</object-name>
-        <property>rotors/main2/blade/flap-deg</property>
+        <property>rotors/tail/blade/flap-deg</property>
         <axis>
             <x>0</x>
             <y>1</y>
@@ -311,7 +332,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.22</object-name>
-        <property>rotors/main2/blade[1]/position-deg</property>
+        <property>rotors/tail/blade[1]/position-deg</property>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -327,7 +348,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.22</object-name>
-        <property>rotors/main2/blade[1]/incidence-deg</property>
+        <property>rotors/tail/blade[1]/incidence-deg</property>
         <axis>
             <x>1</x>
             <y>0</y>
@@ -343,7 +364,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.22</object-name>
-        <property>rotors/main2/blade[1]/flap-deg</property>
+        <property>rotors/tail/blade[1]/flap-deg</property>
         <axis>
             <x>0</x>
             <y>1</y>
@@ -359,7 +380,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.23</object-name>
-        <property>rotors/main2/blade[2]/position-deg</property>
+        <property>rotors/tail/blade[2]/position-deg</property>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -375,10 +396,26 @@
     <animation>
         <type>rotate</type>
         <object-name>Blade.23</object-name>
-        <property>rotors/main2/blade[2]/incidence-deg</property>
+        <property>rotors/tail/blade[2]/incidence-deg</property>
         <axis>
             <x>1</x>
             <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>5.792</x-m>
+            <y-m>0</y-m>
+            <z-m>3.734</z-m>
+        </center>
+    </animation>
+
+	<animation>
+        <type>rotate</type>
+        <object-name>Blade.23</object-name>
+        <property>rotors/tail/blade[2]/flap-deg</property>
+        <axis>
+            <x>0</x>
+            <y>1</y>
             <z>0</z>
         </axis>
         <center>
