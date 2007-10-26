@@ -92,6 +92,9 @@ Rr Rotor hub 4 degree forward pitch
         <control-input axis="controls/flight/aileron" control="CYCLICAIL"
            src0="-1.0" src1="1.0"
            dst0="-0.02" dst1="0.02"/>
+        <control-input axis="/controls/flight/elevator-trim" control="COLLECTIVE"
+        src0="-1.0" src1="1.0"
+        dst0="0.05" dst1="-0.05"/>
         <control-input axis="controls/flight/elevator" control="COLLECTIVE"
            src0="-1.0" src1="1.0"
            dst0="0.02" dst1="-0.03"/>
@@ -178,6 +181,9 @@ Rr Rotor hub 4 degree forward pitch
         control="CYCLICAIL"
         src0="-1.0" src1="1.0"
         dst0="-0.02" dst1="0.02"/>
+        <control-input axis="/controls/flight/elevator-trim" control="COLLECTIVE"
+        src0="-1.0" src1="1.0"
+        dst0="-0.05" dst1="0.05"/>
         <control-input axis="controls/flight/elevator"
         control="COLLECTIVE"
         src0="-1.0" src1="1.0"
@@ -198,7 +204,7 @@ Rr Rotor hub 4 degree forward pitch
     engine-prop-factor="0.005"
     engine-accel-limit="2"
 
-    yasimdragfactor="280"
+    yasimdragfactor="220"
     yasimliftfactor="251"
 >
         <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
@@ -321,7 +327,7 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
     <!-- Yasim bug kludge-->
     <ballast x="-4.4" y="0" z="0" mass="9000"/>
     <!-- Yasim bug kludge-->
-    <ballast x="1" y="0" z="0" mass="2000"/>
+    <ballast x="1" y="0" z="0" mass="1800"/>
     <!-- Trim ballast -->
 
     <weight x="5.6" y="-0.5" z="0" mass-prop="/sim/weight[0]/weight-lb"/>

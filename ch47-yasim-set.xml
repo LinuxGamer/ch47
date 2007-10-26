@@ -173,7 +173,7 @@ CH-47 Chinook simulation config.
             <brake-parking>1.0</brake-parking>
         </gear>
         <rotor>
-            <pitch>0.5</pitch>
+            <pitch>1</pitch>
         </rotor>
         <lighting>
             <strobe type="bool">true</strobe>
