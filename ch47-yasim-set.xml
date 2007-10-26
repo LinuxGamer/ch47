@@ -32,10 +32,12 @@ CH-47 Chinook simulation config.
 
         <model>
             <path archive="y">Aircraft/ch47/Models/CH47.xml</path>
+            <livery type="string">paint1.rgb</livery>
             <CH47>
                 <texture type="string" n="0">paint1.rgb</texture>
                 <texture type="string" n="1">paint2.rgb</texture>
                 <texture type="string" n="2">paint3.rgb</texture>
+                <texture type="string" n="3">paint4.rgb</texture>
             </CH47>
         </model>
 
@@ -61,7 +63,7 @@ CH-47 Chinook simulation config.
         <view n="100">
     <name>Copilot View</name>
     <type>lookfrom</type>
-    <internal type="bool">false</internal>
+    <internal type="bool">true</internal>
     <config>
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
@@ -84,7 +86,7 @@ CH-47 Chinook simulation config.
                 <pitch-offset-deg>-15</pitch-offset-deg>
     </config>
     <dynamic>
-      <enabled type="bool" userarchive="y">false</enabled>
+      <enabled type="bool">false</enabled>
     </dynamic>
   </view>
 
@@ -122,6 +124,10 @@ CH-47 Chinook simulation config.
 
         <help>
             <title>CH47</title>
+            <key>
+                <name>L</name>
+                <desc>Toggle liveries</desc>
+            </key>
         </help>
     </sim>
 
@@ -133,6 +139,22 @@ CH-47 Chinook simulation config.
                 <binding>
                     <command>property-toggle</command>
                     <property>/controls/rotor/brake</property>
+                </binding>
+            </key>
+            <key n="76">
+                <name>L</name>
+                <desc>Toggle Livery</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                    var lv = props.globals.getNode("sim/model/CH47");
+                    var sz = size(lv.getChildren("texture"));
+                    var nm=getprop("sim/model/variant");
+                    nm = nm +1;
+                    if(nm >=sz) nm= 0;
+                    setprop("sim/model/variant",nm);
+                    setprop("sim/model/livery",getprop("sim/model/CH47/texture["~nm~"]"));
+                    </script>
                 </binding>
             </key>
         </keyboard>

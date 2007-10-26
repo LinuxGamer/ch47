@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<PropertyList include="ch47-yasim-set.xml">
+ <sim>
+        <model>
+            <variant type="int">3</variant><!-- change this to start with the following textures-->
+            <livery>paint4.rgb</livery>
+        </model>
+ </sim>
+</PropertyList>

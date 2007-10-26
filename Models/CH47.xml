@@ -13,37 +13,7 @@
     <animation>
         <type>material</type>
         <object-name>Painted</object-name>
-        <condition>
-            <equals>
-                <property>sim/model/variant</property>
-                <value>0</value>
-            </equals>
-        </condition>
-        <texture-prop>sim/model/CH47/texture[0]</texture-prop>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>Painted</object-name>
-        <condition>
-            <equals>
-                <property>sim/model/variant</property>
-                <value>1</value>
-            </equals>
-        </condition>
-        <texture-prop>sim/model/CH47/texture[1]</texture-prop>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>Painted</object-name>
-        <condition>
-            <equals>
-                <property>sim/model/variant</property>
-                <value>2</value>
-            </equals>
-        </condition>
-        <texture-prop>sim/model/CH47/texture[2]</texture-prop>
+        <texture-prop>sim/model/livery</texture-prop>
     </animation>
 
     <animation>
