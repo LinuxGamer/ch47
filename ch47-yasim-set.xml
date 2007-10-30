@@ -18,7 +18,7 @@ CH-47 Chinook simulation config.
 
 
         <instrumentation>
-            <path>Aircraft/bo105/Instruments/instrumentation.xml</path>
+            <path>Aircraft/ch47/instrumentation.xml</path>
         </instrumentation>
 
         <sound>
@@ -49,13 +49,13 @@ CH-47 Chinook simulation config.
             <internal archive="y">true</internal>
             <name>Pilot View</name>
             <config>
-                <x-offset-m archive="y">0.57</x-offset-m>
+                <x-offset-m archive="y">0.45</x-offset-m>
                 <!--right-->
-                <y-offset-m archive="y">0.5</y-offset-m>
+                <y-offset-m archive="y">0.55</y-offset-m>
                 <!--up-->
-                <z-offset-m archive="y">-5.7</z-offset-m>
+                <z-offset-m archive="y">-5.86</z-offset-m>
                 <!--back-->
-                <pitch-offset-deg>-15</pitch-offset-deg>
+                <pitch-offset-deg>-20</pitch-offset-deg>
                 <default-field-of-view-deg>60</default-field-of-view-deg>
             </config>
         </view>
@@ -80,10 +80,10 @@ CH-47 Chinook simulation config.
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
       <dynamic-view type="bool">true</dynamic-view>
-                <x-offset-m archive="y">-0.57</x-offset-m>
-                <y-offset-m archive="y">0.5</y-offset-m>
-                <z-offset-m archive="y">-5.7</z-offset-m>
-                <pitch-offset-deg>-15</pitch-offset-deg>
+                <x-offset-m archive="y">-0.45</x-offset-m>
+                <y-offset-m archive="y">0.55</y-offset-m>
+                <z-offset-m archive="y">-5.86</z-offset-m>
+                <pitch-offset-deg>-20</pitch-offset-deg>
     </config>
     <dynamic>
       <enabled type="bool">false</enabled>
@@ -186,6 +186,9 @@ CH-47 Chinook simulation config.
         <gsdi>
             <serviceable type="bool">true</serviceable>
         </gsdi>
+            <inst-vertical-speed-indicator>
+                <serviceable type="bool">true</serviceable>
+            </inst-vertical-speed-indicator>
     </instrumentation>
 
     <rotors>

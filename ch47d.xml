@@ -83,15 +83,15 @@ Rr Rotor hub 4 degree forward pitch
     lift-factor-stall="0.2"
     stall-change-over="5.5"
     drag-factor-stall="35.0"
-    cyclic-factor="0.8"
+    cyclic-factor="0.85"
     rotor-correction-factor="0.85">
 
         <control-input axis="controls/flight/rudder" control="CYCLICAIL"
            src0="-1.0" src1="1.0"
-           dst0="-0.02" dst1="0.02"/>
+           dst0="-0.025" dst1="0.025"/>
         <control-input axis="controls/flight/aileron" control="CYCLICAIL"
            src0="-1.0" src1="1.0"
-           dst0="-0.02" dst1="0.02"/>
+           dst0="-0.025" dst1="0.025"/>
         <control-input axis="/controls/flight/elevator-trim" control="COLLECTIVE"
         src0="-1.0" src1="1.0"
         dst0="0.05" dst1="-0.05"/>
@@ -169,18 +169,18 @@ Rr Rotor hub 4 degree forward pitch
     lift-factor-stall="0.2"
     stall-change-over="5.5"
     drag-factor-stall="35.0"
-    cyclic-factor="0.8"
+    cyclic-factor="0.85"
     rotor-correction-factor="0.85">
 
         <control-input axis="controls/flight/rudder"
         control="CYCLICAIL"
         invert="true"
         src0="-1.0" src1="1.0"
-        dst0="-0.02" dst1="0.02"/>
+        dst0="-0.025" dst1="0.025"/>
         <control-input axis="controls/flight/aileron"
         control="CYCLICAIL"
         src0="-1.0" src1="1.0"
-        dst0="-0.02" dst1="0.02"/>
+        dst0="-0.025" dst1="0.025"/>
         <control-input axis="/controls/flight/elevator-trim" control="COLLECTIVE"
         src0="-1.0" src1="1.0"
         dst0="-0.05" dst1="0.05"/>

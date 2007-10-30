@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <path>alt.ac</path>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ALT.needle</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>0.36</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>alt.1</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>0.00001</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>alt.2</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>0.0001</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>alt.3</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>0.001</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>inhg1</object-name>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>inhg2</object-name>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>inhg3</object-name>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>inhg4</object-name>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <factor>10.0</factor>
+        <step>0.01</step>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>
