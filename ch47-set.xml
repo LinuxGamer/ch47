@@ -32,13 +32,6 @@ CH-47 Chinook simulation config.
 
         <model>
             <path archive="y">Aircraft/ch47/Models/CH47.xml</path>
-            <livery type="string">paint1.rgb</livery>
-            <CH47>
-                <texture type="string" n="0">paint1.rgb</texture>
-                <texture type="string" n="1">paint2.rgb</texture>
-                <texture type="string" n="2">paint3.rgb</texture>
-                <texture type="string" n="3">paint4.rgb</texture>
-            </CH47>
         </model>
 
         <startup>
@@ -124,11 +117,31 @@ CH-47 Chinook simulation config.
 
         <help>
             <title>CH47</title>
-            <key>
-                <name>L</name>
-                <desc>Toggle liveries</desc>
-            </key>
         </help>
+
+    <menubar>
+        <default>
+            <menu n="10">
+                <label>Chinook</label>
+                <enabled type="bool">true</enabled>
+                <item>
+                    <label>Start Idling</label>
+                    <binding>
+                        <command>property-toggle</command>
+                        <property>sim/model/start-idling</property>
+                    </binding>
+                </item>
+                <item>
+                    <label>Select Livery</label>
+                    <binding>
+                        <command>nasal</command>
+                        <script>aircraft.livery.dialog.toggle()</script>
+                    </binding>
+                </item>
+            </menu>
+        </default>
+    </menubar>
+
     </sim>
 
     <input>
@@ -139,22 +152,6 @@ CH-47 Chinook simulation config.
                 <binding>
                     <command>property-toggle</command>
                     <property>/controls/rotor/brake</property>
-                </binding>
-            </key>
-            <key n="76">
-                <name>L</name>
-                <desc>Toggle Livery</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>
-                    var lv = props.globals.getNode("sim/model/CH47");
-                    var sz = size(lv.getChildren("texture"));
-                    var nm=getprop("sim/model/variant");
-                    nm = nm +1;
-                    if(nm >=sz) nm= 0;
-                    setprop("sim/model/variant",nm);
-                    setprop("sim/model/livery",getprop("sim/model/CH47/texture["~nm~"]"));
-                    </script>
                 </binding>
             </key>
         </keyboard>
@@ -199,4 +196,11 @@ CH-47 Chinook simulation config.
             <rpm type="double">0</rpm>
         </tail>
     </rotors>
+
+    <nasal>
+        <CH47>
+            <file>Aircraft/ch47/Nasal/systems.nas</file>
+        </CH47>
+    </nasal>
+
 </PropertyList>

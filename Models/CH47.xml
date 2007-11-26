@@ -3,17 +3,14 @@
     <path>ch47.ac</path>
 
     <animation>
-        <name>Painted</name>
-         <object-name>Fuselage</object-name>
-         <object-name>Ramp</object-name>
-         <object-name>Ldoor</object-name>
-         <object-name>Rdoor</object-name>
-    </animation>
-
-    <animation>
         <type>material</type>
-        <object-name>Painted</object-name>
-        <texture-prop>sim/model/livery</texture-prop>
+        <object-name>Fuselage</object-name>
+        <object-name>Ramp</object-name>
+        <object-name>Ldoor</object-name>
+        <object-name>Rdoor</object-name>
+        <property-base>/sim/model/livery</property-base>
+        <texture-prop>texture</texture-prop>
+        <texture>paint1.rgb</texture>
     </animation>
 
     <animation>
