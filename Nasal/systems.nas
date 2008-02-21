@@ -1,7 +1,6 @@
 ####    CH47D   ####
 
 aircraft.livery.init("Aircraft/ch47/Models/Liveries", "sim/model/livery/name", "sim/model/livery/index");
-Cvolume=props.globals.getNode("/sim/sound/Cvolume",1);
 Ovolume=props.globals.getNode("/sim/sound/Ovolume",1);
 
 var FHmeter = aircraft.timer.new("/instrumentation/clock/flight-meter-sec", 10);
@@ -9,7 +8,6 @@ FHmeter.stop();
 
 
 setlistener("/sim/signals/fdm-initialized", func {
-    Cvolume.setValue(0.5);
     Ovolume.setValue(0.2);
     setprop("/instrumentation/clock/flight-meter-hour",0);
     settimer(update_systems,2);
@@ -18,11 +16,9 @@ setlistener("/sim/signals/fdm-initialized", func {
 
 setlistener("/sim/current-view/view-number", func(vw){
     ViewNum = vw.getValue();
-    if(ViewNum == 0){
-        Cvolume.setValue(0.5);
-        Ovolume.setValue(0.5);
+    if(ViewNum == 0 or ViewNum==7){
+        Ovolume.setValue(0.3);
         }else{
-        Cvolume.setValue(0.2);
         Ovolume.setValue(1.0);
         }
     },1,0);

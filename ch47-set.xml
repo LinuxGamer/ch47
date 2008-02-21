@@ -22,7 +22,7 @@ CH-47 Chinook simulation config.
         </instrumentation>
 
         <sound>
-            <path>Aircraft/bo105/Sounds/sound.xml</path>
+            <path>Aircraft/ch47/Sounds/sound.xml</path>
         </sound>
 
 
@@ -48,8 +48,8 @@ CH-47 Chinook simulation config.
                 <!--up-->
                 <z-offset-m archive="y">-5.86</z-offset-m>
                 <!--back-->
-                <pitch-offset-deg>-20</pitch-offset-deg>
-                <default-field-of-view-deg>60</default-field-of-view-deg>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+                <default-field-of-view-deg>65</default-field-of-view-deg>
             </config>
         </view>
 
@@ -61,7 +61,7 @@ CH-47 Chinook simulation config.
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <default-field-of-view-deg type="double">60.0</default-field-of-view-deg>
+      <default-field-of-view-deg type="double">65.0</default-field-of-view-deg>
       <default-pitch-deg type="double">0</default-pitch-deg>
       <default-heading-deg type="double">0</default-heading-deg>
       <front-direction-deg type="double">0</front-direction-deg>
@@ -76,7 +76,7 @@ CH-47 Chinook simulation config.
                 <x-offset-m archive="y">-0.45</x-offset-m>
                 <y-offset-m archive="y">0.55</y-offset-m>
                 <z-offset-m archive="y">-5.86</z-offset-m>
-                <pitch-offset-deg>-20</pitch-offset-deg>
+                <pitch-offset-deg>-15</pitch-offset-deg>
     </config>
     <dynamic>
       <enabled type="bool">false</enabled>
@@ -84,7 +84,7 @@ CH-47 Chinook simulation config.
   </view>
 
         <current-view>
-            <field-of-view>60.0</field-of-view>
+            <field-of-view>65.0</field-of-view>
         </current-view>
 
         <chase-distance-m>-35</chase-distance-m>
@@ -179,13 +179,31 @@ CH-47 Chinook simulation config.
         </lighting>
     </controls>
 
-    <instrumentation>
+        <instrumentation>
         <gsdi>
             <serviceable type="bool">true</serviceable>
         </gsdi>
             <inst-vertical-speed-indicator>
                 <serviceable type="bool">true</serviceable>
             </inst-vertical-speed-indicator>
+        <radar>
+            <serviceable type="bool" archive="y">true</serviceable>
+            <switch type="string" archive="y">on</switch>
+            <mode-control type="int" archive="y">3</mode-control>
+            <range type="int" archive="y">20</range>
+            <mode type="string"	archive="y">WX</mode>
+            <heading-marker type="bool"	archive="y">false</heading-marker>
+            <lightning type="bool" archive="y">false</lightning>
+            <display-mode type="string">map</display-mode>
+            <radar-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/radarscreen.rgb</radar-texture-path>
+            <echo-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/wxecho.rgb</echo-texture-path>
+            <display-controls>
+                <WX type="bool" archive="y">false</WX>
+                <data type="bool" archive="y">false</data>
+                <pos type="bool" archive="y">true</pos>
+                <centre type="bool" archive="y">true</centre>
+            </display-controls>
+        </radar>
     </instrumentation>
 
     <rotors>

@@ -28,9 +28,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/vsi.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>0.695</y-m>
-            <z-m>-0.025</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>0.725</y-m>
+            <z-m>-0.010</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -38,9 +38,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/vsi.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>-0.422</y-m>
-            <z-m>-0.035</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>-0.418</y-m>
+            <z-m>-0.028</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -48,9 +48,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/asi.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>0.446</y-m>
-            <z-m>0.084</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>0.458</y-m>
+            <z-m>0.087</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -58,9 +58,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/asi.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>-0.673</y-m>
-            <z-m>0.071</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>-0.671</y-m>
+            <z-m>0.079</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -68,9 +68,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/ai.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>-0.547</y-m>
-            <z-m>0.076</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>-0.544</y-m>
+            <z-m>0.081</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -78,9 +78,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/ai.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>0.572</y-m>
-            <z-m>0.083</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>0.591</y-m>
+            <z-m>0.085</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -88,9 +88,9 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/alt.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>-0.422</y-m>
-            <z-m>0.071</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>-0.424</y-m>
+            <z-m>0.082</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -98,13 +98,196 @@
     <model>
         <path>Aircraft/ch47/Models/Instruments/alt.xml</path>
         <offsets>
-            <x-m>-6.660</x-m>
-            <y-m>0.696</y-m>
-            <z-m>0.084</z-m>
+            <x-m>-6.772</x-m>
+            <y-m>0.716</y-m>
+            <z-m>0.097</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
  
+<!--  Center panel -->
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/radar.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.183</y-m>
+            <z-m>0.072</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/N1.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.031</y-m>
+            <z-m>0.060</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/N1.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.039</y-m>
+            <z-m>0.060</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.106</y-m>
+            <z-m>0.060</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.181</y-m>
+            <z-m>0.060</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/temp.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.031</y-m>
+            <z-m>-0.005</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/temp.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.039</y-m>
+            <z-m>-0.005</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.106</y-m>
+            <z-m>-0.005</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.005</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/int-temp.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.031</y-m>
+            <z-m>-0.067</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/int-temp.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.039</y-m>
+            <z-m>-0.067</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.106</y-m>
+            <z-m>-0.067</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.067</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/oilpsi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.031</y-m>
+            <z-m>-0.130</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/oilpsi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.039</y-m>
+            <z-m>-0.130</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.106</y-m>
+            <z-m>-0.130</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.130</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/empty.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.189</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+
 
    <animation>
         <type>rotate</type>
