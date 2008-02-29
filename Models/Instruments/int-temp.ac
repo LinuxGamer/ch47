@@ -8,7 +8,7 @@ OBJECT poly
 name "Temp1.bezel"
 data 10
 Circle.055
-texture "int-temp.rgb"
+texture "int-temp.png"
 texrep 1 1
 crease 20.000000
 numvert 147
@@ -945,7 +945,7 @@ OBJECT poly
 name "Temp1.face"
 data 10
 Circle.054
-texture "int-temp.rgb"
+texture "int-temp.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -1068,7 +1068,7 @@ OBJECT poly
 name "Temp1.needle"
 data 9
 Plane.177
-texture "int-temp.rgb"
+texture "int-temp.png"
 texrep 1 1
 crease 30.000000
 numvert 6

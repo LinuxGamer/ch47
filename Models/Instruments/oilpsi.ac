@@ -7,7 +7,7 @@ OBJECT poly
 name "OILpsi.bezel"
 data 10
 Circle.060
-texture "oilpsi.rgb"
+texture "oilpsi.png"
 texrep 1 1
 crease 20.000000
 numvert 128
@@ -817,7 +817,7 @@ OBJECT poly
 name "OILpsi.face"
 data 10
 Circle.059
-texture "oilpsi.rgb"
+texture "oilpsi.png"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -940,7 +940,7 @@ OBJECT poly
 name "OILpsi.needle"
 data 9
 Plane.179
-texture "oilpsi.rgb"
+texture "oilpsi.png"
 texrep 1 1
 crease 30.000000
 numvert 6

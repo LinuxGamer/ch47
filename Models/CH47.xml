@@ -10,13 +10,13 @@
         <object-name>Rdoor</object-name>
         <property-base>/sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>paint1.rgb</texture>
+        <texture>paint1.png</texture>
     </animation>
 
     <animation>
         <type>shader</type>
         <shader>chrome</shader>
-        <texture>Aircraft/ch47/Models/chrome1.rgb</texture>
+        <texture>Aircraft/ch47/Models/chrome1.png</texture>
         <object-name>Wshield</object-name>
         <object-name>Rdoor.glass</object-name>
         <object-name>Ldoor.glass</object-name>
@@ -24,23 +24,14 @@
         <object-name>LH.glass</object-name>
     </animation>
 
+<!--LH PANEL-->
 
     <model>
         <path>Aircraft/ch47/Models/Instruments/vsi.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>0.725</y-m>
-            <z-m>-0.010</z-m>
-            <pitch-deg>0.0</pitch-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <path>Aircraft/ch47/Models/Instruments/vsi.xml</path>
-        <offsets>
-            <x-m>-6.772</x-m>
-            <y-m>-0.418</y-m>
-            <z-m>-0.028</z-m>
+            <y-m>-0.419</y-m>
+            <z-m>-0.023</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -49,37 +40,131 @@
         <path>Aircraft/ch47/Models/Instruments/asi.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>0.458</y-m>
-            <z-m>0.087</z-m>
+            <y-m>-0.673</y-m>
+            <z-m>0.084</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
 
     <model>
-        <path>Aircraft/ch47/Models/Instruments/asi.xml</path>
+        <path>Aircraft/ch47/Models/Instruments/ralt.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>-0.671</y-m>
-            <z-m>0.079</z-m>
+            <y-m>-0.675</y-m>
+            <z-m>-0.016</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/chronometer.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.667</y-m>
+            <z-m>-0.113</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
 
     <model>
         <path>Aircraft/ch47/Models/Instruments/ai.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>-0.544</y-m>
+            <y-m>-0.549</y-m>
             <z-m>0.081</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
 
     <model>
+        <path>Aircraft/ch47/Models/Instruments/alt.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.425</y-m>
+            <z-m>0.087</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/rtr-rpm.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.786</y-m>
+            <z-m>-0.038</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/eng-trq.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.786</y-m>
+            <z-m>0.072</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/hsi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.557</y-m>
+            <z-m>-0.058</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/hsi-ctl.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>-0.557</y-m>
+            <z-m>-0.133</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+
+<!--RH PANEL-->
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/vsi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.718</y-m>
+            <z-m>-0.010</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/asi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.454</y-m>
+            <z-m>0.083</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/ralt.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.454</y-m>
+            <z-m>-0.015</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
         <path>Aircraft/ch47/Models/Instruments/ai.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>0.591</y-m>
+            <y-m>0.584</y-m>
             <z-m>0.085</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
@@ -89,23 +174,73 @@
         <path>Aircraft/ch47/Models/Instruments/alt.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>-0.424</y-m>
-            <z-m>0.082</z-m>
+            <y-m>0.710</y-m>
+            <z-m>0.094</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
 
     <model>
-        <path>Aircraft/ch47/Models/Instruments/alt.xml</path>
+        <path>Aircraft/ch47/Models/Instruments/rtr-rpm.xml</path>
         <offsets>
             <x-m>-6.772</x-m>
-            <y-m>0.716</y-m>
-            <z-m>0.097</z-m>
+            <y-m>0.355</y-m>
+            <z-m>-0.085</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
- 
-<!--  Center panel -->
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/eng-trq.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.355</y-m>
+            <z-m>0.018</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/aoa.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.355</y-m>
+            <z-m>0.108</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/hsi.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.576</y-m>
+            <z-m>-0.058</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/hsi-ctl.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.576</y-m>
+            <z-m>-0.133</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <path>Aircraft/ch47/Models/Instruments/chronometer.xml</path>
+        <offsets>
+            <x-m>-6.772</x-m>
+            <y-m>0.459</y-m>
+            <z-m>-0.116</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+    </model>
+
+<!--  CENTER PANEL -->
 
     <model>
         <path>Aircraft/ch47/Models/Instruments/radar.xml</path>
@@ -289,7 +424,7 @@
 
 
 
-   <animation>
+<animation>
         <type>rotate</type>
         <object-name>Hub1</object-name>
         <object-name>Blade.11</object-name>
@@ -711,6 +846,36 @@
             <y>0</y>
             <z>1</z>
         </axis>
+    </animation>
+
+<!--  Controls -->
+
+    <animation>
+        <type>translate</type>
+        <object-name>Ebrake.lever</object-name>
+        <property>controls/gear/brake-parking</property>
+        <factor>0.0150</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+<!-- Hotspots-->
+
+    <animation>
+        <type>pick</type>
+        <object-name>Ebrake.lever</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/gear/brake-parking</property>
+        </binding>
+        </action>
     </animation>
 
 </PropertyList>

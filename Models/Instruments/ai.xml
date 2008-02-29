@@ -4,9 +4,24 @@
     <path>ai.ac</path>
 
     <animation>
+        <type>material</type>
+        <object-name>AI.ball</object-name>
+        <object-name>AI.rollneedle</object-name>
+        <object-name>AI.ring</object-name>
+        <object-name>AI.bird</object-name>
+        <emission>
+            <red>0.0175</red>
+            <green>0.0175</green>
+            <blue>0.0175</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+        </emission>
+    </animation>
+
+
+    <animation>
         <type>rotate</type>
         <object-name>AI.ball</object-name>
-        <object-name>AI.rollarrows</object-name>
+        <object-name>AI.rollneedle</object-name>
         <property>/orientation/roll-deg</property>
         <axis>
             <x>1</x>
@@ -14,7 +29,7 @@
             <z>0</z>
         </axis>
         <center>
-            <x-m>-0.054</x-m>
+            <x-m>-0.042</x-m>
             <y-m>0</y-m>
             <z-m>0</z-m>
         </center>
@@ -30,7 +45,7 @@
             <z>0</z>
         </axis>
         <center>
-            <x-m>-0.054</x-m>
+            <x-m>-0.042</x-m>
             <y-m>0</y-m>
             <z-m>0</z-m>
         </center>
@@ -38,4 +53,3 @@
 
 
 </PropertyList>
-

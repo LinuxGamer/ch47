@@ -7,8 +7,11 @@ Blades (fiberglass)
 weight ?
 Frt Rotor hub 9 degree forward pitch
 Rr Rotor hub 4 degree forward pitch
+Max weight 50,000 lbs
+
 -->
-<airplane mass="23500">
+
+<airplane mass="23400">
 
 	<!-- Approach configuration, only for gear solver :-)  -->
 	<approach speed="70" aoa="0" alt="0">
@@ -42,7 +45,7 @@ Rr Rotor hub 4 degree forward pitch
 	numblades="3"
 	weightperblade="270"
 	relbladecenter="0.53"
-	dynamic="0.9"
+	dynamic="1.0"
 	rpm="225"
 	rellenflaphinge="0.03"
 	delta3="0"
@@ -75,7 +78,7 @@ Rr Rotor hub 4 degree forward pitch
 	maxtiltpitch="9"
 	maxtiltroll="0"
 	downwashfactor="0.3"
-	airfoil-lift-coefficient="5.7"
+	airfoil-lift-coefficient="6.4"
 	airfoil-drag-coefficient0="0.0075"
 	airfoil-drag-coefficient1="0.045"
 	incidence-stall-zero-speed="10.5"
@@ -91,10 +94,13 @@ Rr Rotor hub 4 degree forward pitch
 		   dst0="-0.04" dst1="0.04"/>
 		<control-input axis="controls/flight/aileron" control="CYCLICAIL"
 		   src0="-1.0" src1="1.0"
-		   dst0="-0.02" dst1="0.02"/>
+		   dst0="-0.03" dst1="0.03"/>
 		<control-input axis="controls/flight/elevator" control="COLLECTIVE"
 		   src0="-1.0" src1="1.0"
-		   dst0="0.02" dst1="-0.03"/>
+		   dst0="0.02" dst1="-0.02"/>
+		<control-input axis="controls/flight/elevator-trim" control="COLLECTIVE"
+		   src0="-1.0" src1="1.0"
+		   dst0="0.02" dst1="-0.02"/>
 		<control-input axis="controls/engines/engine[1]/throttle" control="COLLECTIVE"
 		   src0="-0.0" src1="1.0"
 		   dst0="0.12" dst1="0.01"/>
@@ -158,7 +164,7 @@ Rr Rotor hub 4 degree forward pitch
 	maxtiltpitch="4"
 	maxtiltroll="0"
 	downwashfactor="0.3"
-	airfoil-lift-coefficient="5.7"
+	airfoil-lift-coefficient="6.4"
 	airfoil-drag-coefficient0="0.0075"
 	airfoil-drag-coefficient1="0.045"
 	incidence-stall-zero-speed="10.5"
@@ -177,11 +183,15 @@ Rr Rotor hub 4 degree forward pitch
 		<control-input axis="controls/flight/aileron"
 		control="CYCLICAIL"
 		src0="-1.0" src1="1.0"
-		dst0="-0.02" dst1="0.02"/>
+		dst0="-0.03" dst1="0.03"/>
 		<control-input axis="controls/flight/elevator"
 		control="COLLECTIVE"
 		src0="-1.0" src1="1.0"
-		dst0="-0.03" dst1="0.02"/>
+		dst0="-0.02" dst1="0.02"/>
+		<control-input axis="controls/flight/elevator-trim"
+		control="COLLECTIVE"
+		src0="-1.0" src1="1.0"
+		dst0="-0.02" dst1="0.02"/>
 		<control-input axis="controls/engines/engine[1]/throttle"
 		control="COLLECTIVE"
 		src0="-0.0" src1="1.0"
@@ -199,7 +209,7 @@ Rr Rotor hub 4 degree forward pitch
 	engine-accel-limit="2"
 
 	yasimdragfactor="230"
-	yasimliftfactor="251"
+	yasimliftfactor="280"
 >
 		<control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
 		<control-input axis="/controls/rotor/brake" control="ROTORBRAKE"
@@ -267,7 +277,7 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 	width="1.0" taper="0.2" midpoint="0.4" cy="3" cx="10" idrag="0"/>
 
 	<gear x="2.78" y="-1.5" z="-2.0"
-	compression="0.5"
+	compression="0.4"
 	spring="10.5"
 	damp="1.0">
 		<control-input axis="controls/flight/rudder" control="STEER" square="true"/>
@@ -276,7 +286,7 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 	</gear>
 
 	<gear x="2.78" y="1.5" z="-2.0"
-	compression="0.5"
+	compression="0.4"
 	spring="10.5"
 	damp="1.0">
 		<control-input axis="controls/flight/rudder" control="STEER" square="true"/>
@@ -285,7 +295,7 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 	</gear>
 
 	<gear x="-4.45" y="1.5" z="-1.7"
-	compression="0.5"
+	compression="0.4"
 	spring="10.5"
 	damp="1.0">
 		<control-input axis="controls/gear/brake-left" control="BRAKE"/>
@@ -293,7 +303,7 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 	</gear>
 
 	<gear x="-4.45" y="-1.5" z="-1.7"
-	compression="0.5"
+	compression="0.4"
 	spring="10.5"
 	damp="1.0">
 		<control-input axis="controls/gear/brake-right" control="BRAKE"/>
@@ -303,8 +313,8 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 
 	<!--two main tanks 1034 gal total-->
 
-	<tank x="0" y="1.5" z="-0.5" capacity="3464"/>
-	<tank x="0" y="-1.5" z="-0.5" capacity="3464"/>
+	<tank x="0" y="1.5" z="-0.5" capacity="3464" jet="true"/>
+	<tank x="0" y="-1.5" z="-0.5" capacity="3464" jet="true"/>
 
 	<tank x="0" y="0" z="0" capacity="0"/>
 
@@ -327,7 +337,9 @@ incidence="-3" > <stall aoa="20" /> </mstab -->
 	<!-- Yasim bug kludge-->
 	<ballast x="1" y="0" z="0" mass="2000"/>
 	<!-- Trim ballast -->
-	<weight x="0" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
+    <weight x="6" y="-0.5" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
+    <weight x="6" y="0.5" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
+    <weight x="0" y="0" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
 	<!-- inner payload -->
 
 	<!-- some ballast to get c.g. correct and inertia tensor reasonable

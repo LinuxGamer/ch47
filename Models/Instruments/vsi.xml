@@ -9,9 +9,9 @@
         <object-name>VSI.face</object-name>
         <object-name>VSI.needle</object-name>
         <emission>
-            <red>0.5</red>
-            <green>0.5</green>
-            <blue>0.5</blue>
+            <red>0.0175</red>
+            <green>0.0175</green>
+            <blue>0.0175</blue>
             <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
         </emission>
     </animation>

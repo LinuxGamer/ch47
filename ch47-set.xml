@@ -25,6 +25,11 @@ CH-47 Chinook simulation config.
             <path>Aircraft/ch47/Sounds/sound.xml</path>
         </sound>
 
+        <systems>
+            <electrical>
+                <path></path>
+            </electrical>
+        </systems>
 
         <panel>
             <visibility archive="n">false</visibility>
@@ -35,7 +40,7 @@ CH-47 Chinook simulation config.
         </model>
 
         <startup>
-            <splash-texture>Aircraft/ch47/ch47-splash.rgb</splash-texture>
+            <splash-texture>Aircraft/ch47/ch47-splash.png</splash-texture>
         </startup>
 
         <view n="0">
@@ -194,9 +199,9 @@ CH-47 Chinook simulation config.
             <mode type="string"	archive="y">WX</mode>
             <heading-marker type="bool"	archive="y">false</heading-marker>
             <lightning type="bool" archive="y">false</lightning>
-            <display-mode type="string">map</display-mode>
-            <radar-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/radarscreen.rgb</radar-texture-path>
-            <echo-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/wxecho.rgb</echo-texture-path>
+            <display-mode type="string">plan</display-mode>
+            <radar-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/radarscreen.png</radar-texture-path>
+            <echo-texture-path type="string" archive="y">Aircraft/ch47/Models/Instruments/wxecho.png</echo-texture-path>
             <display-controls>
                 <WX type="bool" archive="y">false</WX>
                 <data type="bool" archive="y">false</data>
@@ -204,6 +209,23 @@ CH-47 Chinook simulation config.
                 <centre type="bool" archive="y">true</centre>
             </display-controls>
         </radar>
+        <transponder>
+            <inputs>
+                <serviceable type="bool">true</serviceable>
+            </inputs>
+        </transponder>
+        <nav>
+            <serviceable type="bool">true</serviceable>
+        </nav>
+        <nav n="1">
+            <serviceable type="bool">true</serviceable>
+        </nav>
+        <comm>
+            <serviceable type="bool">true</serviceable>
+        </comm>
+        <comm n="1">
+            <serviceable type="bool">true</serviceable>
+        </comm>
     </instrumentation>
 
     <rotors>
@@ -218,6 +240,7 @@ CH-47 Chinook simulation config.
     <nasal>
         <CH47>
             <file>Aircraft/ch47/Nasal/systems.nas</file>
+            <file>Aircraft/ch47/Nasal/Electrical.nas</file>
         </CH47>
     </nasal>
 
