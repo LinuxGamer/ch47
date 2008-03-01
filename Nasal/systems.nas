@@ -1,6 +1,6 @@
 ####    CH47D   ####
 
-aircraft.livery.init("Aircraft/ch47/Models/Liveries", "sim/model/livery/name", "sim/model/livery/index");
+aircraft.livery.init("Aircraft/ch47/Models/Liveries");
 Ovolume=props.globals.getNode("/sim/sound/Ovolume",1);
 
 #HelicopterEngine class 

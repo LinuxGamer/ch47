@@ -37,6 +37,9 @@ CH-47 Chinook simulation config.
 
         <model>
             <path archive="y">Aircraft/ch47/Models/CH47.xml</path>
+            <livery>
+                <file type="string">Army</file>
+            </livery>
         </model>
 
         <startup>
@@ -126,7 +129,7 @@ CH-47 Chinook simulation config.
 
     <menubar>
         <default>
-            <menu n="10">
+            <menu n="100">
                 <label>Chinook</label>
                 <enabled type="bool">true</enabled>
                 <item>

@@ -2,6 +2,16 @@
 <PropertyList>
     <path>ch47.ac</path>
 
+    <nasal>
+        <load>
+            var livery_update = aircraft.livery.update("Aircraft/ch47/Models/Liveries", 10);
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal>
+
     <animation>
         <type>material</type>
         <object-name>Fuselage</object-name>
