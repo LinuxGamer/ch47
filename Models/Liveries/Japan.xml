@@ -6,7 +6,7 @@
         <livery>
             <name type="string">JAPAN</name>
             <index type="int">3</index>
-            <file>paint4.png</file>
+            <texture>paint4.png</texture>
         </livery>
     </model>
 </sim>
