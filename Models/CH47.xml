@@ -18,7 +18,7 @@
         <object-name>Ramp</object-name>
         <object-name>Ldoor</object-name>
         <object-name>Rdoor</object-name>
-        <property-base>/sim/model/livery</property-base>
+        <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>paint1.png</texture>
     </animation>
