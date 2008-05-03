@@ -58,6 +58,19 @@ CH-47 Chinook simulation config.
                 <!--back-->
                 <pitch-offset-deg>-15</pitch-offset-deg>
                 <default-field-of-view-deg>65</default-field-of-view-deg>
+                <limits>
+                    <enabled type="bool">true</enabled>
+                    <left>
+                    <heading-max-deg type="double">140</heading-max-deg>
+                    <x-offset-max-m type="double">0.25</x-offset-max-m>
+                    <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">160</heading-max-deg>
+                        <x-offset-max-m type="double">0.35</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
             </config>
         </view>
 
@@ -81,10 +94,23 @@ CH-47 Chinook simulation config.
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
       <dynamic-view type="bool">true</dynamic-view>
-                <x-offset-m archive="y">-0.45</x-offset-m>
-                <y-offset-m archive="y">0.55</y-offset-m>
-                <z-offset-m archive="y">-5.86</z-offset-m>
-                <pitch-offset-deg>-15</pitch-offset-deg>
+        <x-offset-m archive="y">-0.45</x-offset-m>
+        <y-offset-m archive="y">0.55</y-offset-m>
+        <z-offset-m archive="y">-5.86</z-offset-m>
+        <pitch-offset-deg>-15</pitch-offset-deg>
+        <limits>
+            <enabled type="bool">true</enabled>
+            <left>
+                <heading-max-deg type="double">140</heading-max-deg>
+                <x-offset-max-m type="double">0.35</x-offset-max-m>
+                <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+            </left>
+            <right>
+                <heading-max-deg type="double">160</heading-max-deg>
+                <x-offset-max-m type="double">0.25</x-offset-max-m>
+                <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+            </right>
+        </limits>
     </config>
     <dynamic>
       <enabled type="bool">false</enabled>
@@ -99,6 +125,12 @@ CH-47 Chinook simulation config.
 
         <turbulence-effect type = "bool">true</turbulence-effect>
         <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+    <airport>
+        <runways>
+            <start-offset-m>30</start-offset-m>
+        </runways>
+    </airport>
 
         <hud>
             <enable3d>false</enable3d>
