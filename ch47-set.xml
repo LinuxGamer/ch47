@@ -8,7 +8,7 @@ CH-47 Chinook simulation config.
 <PropertyList>
     <sim>
         <description>CH-47 Chinook</description>
-        <author>Melchior Franz, Maik Justus (FDM),Syd Adams (3D)</author>
+        <author>Melchior Franz, Maik Justus (FDM),Syd Adams (3D),AndersG</author>
         <status>alpha</status>
         <aircraft-version>0.1</aircraft-version>
 
@@ -178,9 +178,65 @@ CH-47 Chinook simulation config.
                         <script>aircraft.livery.dialog.toggle()</script>
                     </binding>
                 </item>
+                <item>
+                    <label>Find Aircraft to Tow [Ctrl o]</label>
+                    <binding>
+                        <command>property-assign</command>
+                        <property>/controls/aerotow/find-aircraft</property>
+                        <value type="bool">true</value>
+                    </binding>
+                    <mod-up>
+                        <binding>
+                            <command>property-assign</command>
+                            <property>controls/aerotow/find-aircraft</property>
+                            <value type="bool">false</value>
+                        </binding>
+                    </mod-up>
+                </item>
+                <item>
+                    <label>lock tow hook [o]</label>
+                    <binding>
+                        <command>property-assign</command>
+                        <property>sim/hitches/aerotow/open</property>
+                        <value type="bool">false</value>
+                    </binding>
+                </item>
+                <item>
+                    <label>open tow hook [O]</label>
+                    <binding>
+                        <command>property-assign</command>
+                        <property>sim/hitches/aerotow/open</property>
+                        <value type="bool">true</value>
+                    </binding>
+                </item>
             </menu>
         </default>
     </menubar>
+
+    <hitches>
+      <!-- make sure some properties do exist, when the list for multiplayer transfer is defined-->
+      <!-- they need to be in the same value, as they are initilized in the FDM, to get the same values after reset should fix this somehow-->
+      <aerotow>
+        <tow>
+          <length type="float">30</length>
+          <elastic-constant type="float">10000</elastic-constant>
+          <weight-per-m-kg-m type="float">0.035</weight-per-m-kg-m>
+          <dist type="float">1</dist>
+          <connected-to-property-node type="bool"></connected-to-property-node>
+          <brake-force type="float">100000</brake-force>
+          <connected-to-ai-or-mp-callsign type ="string">*</connected-to-ai-or-mp-callsign>
+          <end-force-x type ="float">0</end-force-x>
+          <end-force-y type ="float">0</end-force-y>
+          <end-force-z type ="float">0</end-force-z>
+        </tow>
+        <speed-in-tow-direction type="float">0</speed-in-tow-direction>
+        <open type="bool">true</open>
+        <local-pos-x type="float">0</local-pos-x>
+        <local-pos-y type="float">0</local-pos-y>
+        <local-pos-z type="float">0</local-pos-z>
+        <is-slave type="bool">false</is-slave>
+      </aerotow>
+    </hitches>
 
     </sim>
 
@@ -194,6 +250,40 @@ CH-47 Chinook simulation config.
                     <property>/controls/rotor/brake</property>
                 </binding>
             </key>
+      <key n="15">
+        <name>Ctrl-o</name>
+        <desc>Find aircraft for aerotow</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/aerotow/find-aircraft</property>
+          <value type="bool">true</value>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-assign</command>
+            <property>/controls/aerotow/find-aircraft</property>
+            <value type="bool">false</value>
+          </binding>
+        </mod-up>
+      </key>
+      <key n="111">
+        <name>o</name>
+        <desc>Lock aerotow hook</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/hitches/aerotow/open</property>
+          <value type="bool">false</value>
+        </binding>
+      </key>
+      <key n="79">
+        <name>O</name>
+        <desc>Open aerotow hook</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>/sim/hitches/aerotow/open</property>
+          <value type="bool">true</value>
+        </binding>
+      </key>
         </keyboard>
     </input>
 
@@ -217,6 +307,9 @@ CH-47 Chinook simulation config.
             <beacon type="bool">true</beacon>
             <nav-lights type="bool">true</nav-lights>
         </lighting>
+    <aerotow>
+      <find-aircraft type="bool">false</find-aircraft>
+    </aerotow>
     </controls>
 
         <instrumentation>
