@@ -143,44 +143,7 @@
 
     <animation>
         <type>pick</type>
-        <object-name>inhgplus</object-name>
-        <visible>0</visible>
-        <action>
-            <button>0</button>
-            <repeatable>true</repeatable>
-            <binding>
-            <command>property-adjust</command>
-            <property>instrumentation/altimeter/setting-inhg</property>
-            <step>0.01</step>
-            <min>27.90</min>
-            <max>31.40</max>
-            <wrap>0</wrap>
-        </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>inhgplus</object-name>
-        <visible>0</visible>
-        <action>
-            <button>1</button>
-            <repeatable>true</repeatable>
-            <binding>
-            <command>property-adjust</command>
-            <property>instrumentation/altimeter/setting-inhg</property>
-            <step>0.1</step>
-            <min>27.90</min>
-            <max>31.40</max>
-            <wrap>0</wrap>
-        </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>inhgminus</object-name>
-        <visible>0</visible>
+        <object-name>ALT.knob</object-name>
         <action>
             <button>0</button>
             <repeatable>true</repeatable>
@@ -197,8 +160,7 @@
 
     <animation>
         <type>pick</type>
-        <object-name>inhgminus</object-name>
-        <visible>0</visible>
+        <object-name>ALT.knob</object-name>
         <action>
             <button>1</button>
             <repeatable>true</repeatable>

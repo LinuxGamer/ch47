@@ -52,9 +52,9 @@ Max weight 50,000 lbs
     delta="0.2"
     pitch-a="10"
     pitch-b="15"
-    flapmin="-18"
+    flapmin="-9"
     flapmax="18"
-    flap0="-9"
+    flap0="-5"
     flap0factor="0"
     notorque="0"
     dragfactor="0.30"
@@ -138,9 +138,9 @@ Max weight 50,000 lbs
     delta="0.2"
     pitch-a="10"
     pitch-b="15"
-    flapmin="-18"
+    flapmin="-9"
     flapmax="18"
-    flap0="-9"
+    flap0="-5"
     flap0factor="0"
     notorque="0"
     dragfactor="0.30"
@@ -208,7 +208,7 @@ Max weight 50,000 lbs
     engine-prop-factor="0.005"
     engine-accel-limit="2"
 
-    yasimdragfactor="230"
+    yasimdragfactor="200"
     yasimliftfactor="280"
 >
         <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>

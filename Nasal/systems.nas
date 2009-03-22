@@ -2,6 +2,7 @@
 
 aircraft.livery.init("Aircraft/ch47/Models/Liveries");
 Ovolume=props.globals.getNode("/sim/sound/Ovolume",1);
+var ramp = aircraft.door.new("/controls/ramp", 8);
 
 #HelicopterEngine class 
 # ie: var Eng = Engine.new(engine number,rotor_prop);
@@ -71,9 +72,8 @@ setlistener("/sim/signals/fdm-initialized", func {
     print("Aircraft Systems ... OK");
 });
 
-setlistener("/sim/current-view/view-number", func(vw){
-    ViewNum = vw.getValue();
-    if(ViewNum == 0 or ViewNum==7){
+setlistener("/sim/current-view/internal", func(vw){
+    if(vw.getValue()){
         Ovolume.setValue(0.3);
         }else{
         Ovolume.setValue(1.0);

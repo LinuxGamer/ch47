@@ -18,6 +18,8 @@
         <object-name>Ramp</object-name>
         <object-name>Ldoor</object-name>
         <object-name>Rdoor</object-name>
+        <object-name>Rengine</object-name>
+        <object-name>Lengine</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>paint1.png</texture>
@@ -432,7 +434,22 @@
         </offsets>
     </model>
 
-
+<animation>
+        <type>rotate</type>
+        <object-name>Ramp</object-name>
+        <property>controls/ramp/position-norm</property>
+        <factor>42</factor>
+        <center>
+            <x-m>5.203</x-m>
+            <y-m>0</y-m>
+            <z-m>-1.082</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
 
 <animation>
         <type>rotate</type>
@@ -440,9 +457,9 @@
         <object-name>Blade.11</object-name>
         <object-name>Blade.12</object-name>
         <object-name>Blade.13</object-name>
-        <object-name>Hub1.pitchlink</object-name>
-        <object-name>Hub1.pitchlink.001</object-name>
-        <object-name>Hub1.pitchlink.002</object-name>
+        <object-name>pitchlink.11</object-name>
+        <object-name>pitchlink.12</object-name>
+        <object-name>pitchlink.13</object-name>
         <property>rotors/main/tilt/pitch-deg</property>
         <center>
             <x-m>-5.782</x-m>
@@ -457,35 +474,24 @@
     </animation>
 
     <animation>
-        <type>rotate</type>
+        <type>spin</type>
         <object-name>Hub1</object-name>
-        <property>rotors/main/blade/position-deg</property>
+<object-name>Blade.11</object-name>
+<object-name>Blade.12</object-name>
+<object-name>Blade.13</object-name>
+<object-name>pitchlink.11</object-name>
+<object-name>pitchlink.12</object-name>
+<object-name>pitchlink.13</object-name>
+        <property>rotors/main/rpm</property>
         <axis>
             <x>0.0</x>
             <y>0</y>
             <z>1.0</z>
         </axis>
         <center>
-            <x-m>-5.782</x-m>
+            <x-m>-5.778</x-m>
             <y-m>0</y-m>
-            <z-m>2.438</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.11</object-name>
-        <object-name>Hub1.pitchlink</object-name>
-        <property>rotors/main/blade/position-deg</property>
-        <axis>
-            <x>0.0</x>
-            <y>0</y>
-            <z>1.0</z>
-        </axis>
-        <center>
-            <x-m>-5.782</x-m>
-            <y-m>0</y-m>
-            <z-m>2.438</z-m>
+            <z-m>2.184</z-m>
         </center>
     </animation>
 
@@ -494,15 +500,27 @@
         <object-name>Blade.11</object-name>
         <property>rotors/main/blade/incidence-deg</property>
         <axis>
-            <x>-1.0</x>
+            <x>1.0</x>
             <y>0</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>-5.782</x-m>
-            <y-m>0</y-m>
-            <z-m>2.438</z-m>
+            <x-m>-5.363</x-m>
+            <y-m>0.011</y-m>
+            <z-m>2.415</z-m>
         </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>pitchlink.11</object-name>
+        <property>rotors/main/blade/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
     </animation>
 
     <animation>
@@ -511,30 +529,13 @@
         <property>rotors/main/blade/flap-deg</property>
         <axis>
             <x>0</x>
-            <y>1</y>
+            <y>-1</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>-6.028</x-m>
-            <y-m>0</y-m>
-            <z-m>2.378</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.12</object-name>
-        <object-name>Hub1.pitchlink.001</object-name>
-        <property>rotors/main/blade[1]/position-deg</property>
-        <axis>
-            <x>0.0</x>
-            <y>0</y>
-            <z>1.0</z>
-        </axis>
-        <center>
-            <x-m>-5.782</x-m>
-            <y-m>0</y-m>
-            <z-m>2.438</z-m>
+            <x-m>-5.531</x-m>
+            <y-m>0.253</y-m>
+            <z-m>2.417</z-m>
         </center>
     </animation>
 
@@ -543,15 +544,27 @@
         <object-name>Blade.12</object-name>
         <property>rotors/main/blade[1]/incidence-deg</property>
         <axis>
-            <x>-1.0</x>
-            <y>0</y>
+            <x>-0.5</x>
+            <y>0.866</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>-6.028</x-m>
-            <y-m>0</y-m>
-            <z-m>2.378</z-m>
+            <x-m>-5.984</x-m>
+            <y-m>0.358</y-m>
+            <z-m>2.415</z-m>
         </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>pitchlink.12</object-name>
+        <property>rotors/main/blade[1]/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
     </animation>
 
    <animation>
@@ -559,31 +572,14 @@
         <object-name>Blade.12</object-name>
         <property>rotors/main/blade[1]/flap-deg</property>
         <axis>
-            <x>0</x>
-            <y>1</y>
+            <x>0.866</x>
+            <y>0.5</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>-6.028</x-m>
-            <y-m>0</y-m>
-            <z-m>2.378</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.13</object-name>
-        <property>rotors/main/blade[2]/position-deg</property>
-        <object-name>Hub1.pitchlink.002</object-name>
-        <axis>
-            <x>0.0</x>
-            <y>0</y>
-            <z>1.0</z>
-        </axis>
-        <center>
-            <x-m>-5.782</x-m>
-            <y-m>0</y-m>
-            <z-m>2.438</z-m>
+            <x-m>-5.916</x-m>
+            <y-m>0.239</y-m>
+            <z-m>2.417</z-m>
         </center>
     </animation>
 
@@ -592,15 +588,27 @@
         <object-name>Blade.13</object-name>
         <property>rotors/main/blade[2]/incidence-deg</property>
         <axis>
-            <x>-1.0</x>
-            <y>0</y>
+            <x>-0.5</x>
+            <y>-0.866</y>
             <z>0.0</z>
         </axis>
         <center>
-            <x-m>-6.028</x-m>
-            <y-m>0</y-m>
-            <z-m>2.378</z-m>
+            <x-m>-5.985</x-m>
+            <y-m>-0.358</y-m>
+            <z-m>2.414</z-m>
         </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>pitchlink.13</object-name>
+        <property>rotors/main/blade[2]/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
     </animation>
 
    <animation>
@@ -608,14 +616,14 @@
         <object-name>Blade.13</object-name>
         <property>rotors/main/blade[2]/flap-deg</property>
         <axis>
-            <x>0</x>
-            <y>1</y>
+            <x>-0.866</x>
+            <y>0.5</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>-6.028</x-m>
-            <y-m>0</y-m>
-            <z-m>2.378</z-m>
+            <x-m>-5.916</x-m>
+            <y-m>-0.240</y-m>
+            <z-m>2.417</z-m>
         </center>
     </animation>
 
@@ -627,14 +635,14 @@
         <object-name>Blade.21</object-name>
         <object-name>Blade.22</object-name>
         <object-name>Blade.23</object-name>
-        <object-name>Hub2.pitchlink</object-name>
-        <object-name>Hub2.pitchlink.001</object-name>
-        <object-name>Hub2.pitchlink.002</object-name>
+        <object-name>pitchlink.21</object-name>
+        <object-name>pitchlink.22</object-name>
+        <object-name>pitchlink.23</object-name>
         <property>rotors/tail/tilt/pitch-deg</property>
         <center>
             <x-m>6.045</x-m>
             <y-m>0</y-m>
-            <z-m>3.751</z-m>
+            <z-m>3.496</z-m>
         </center>
         <axis>
             <x>0.0</x>
@@ -644,35 +652,24 @@
     </animation>
 
     <animation>
-        <type>rotate</type>
+        <type>spin</type>
         <object-name>Hub2</object-name>
-        <object-name>Hub2.pitchlink</object-name>
-        <property>rotors/tail/blade/position-deg</property>
+<object-name>Blade.21</object-name>
+<object-name>Blade.22</object-name>
+<object-name>Blade.23</object-name>
+<object-name>pitchlink.21</object-name>
+<object-name>pitchlink.22</object-name>
+<object-name>pitchlink.23</object-name>
+        <property>rotors/tail/rpm</property>
         <axis>
-            <x>0</x>
+            <x>0.0</x>
             <y>0</y>
-            <z>-1</z>
+            <z>-1.0</z>
         </axis>
         <center>
-            <x-m>6.046</x-m>
+            <x-m>6.045</x-m>
             <y-m>0</y-m>
-            <z-m>3.702</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.21</object-name>
-        <property>rotors/tail/blade/position-deg</property>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>-1</z>
-        </axis>
-        <center>
-            <x-m>6.046</x-m>
-            <y-m>0</y-m>
-            <z-m>3.702</z-m>
+            <z-m>3.496</z-m>
         </center>
     </animation>
 
@@ -681,15 +678,27 @@
         <object-name>Blade.21</object-name>
         <property>rotors/tail/blade/incidence-deg</property>
         <axis>
-            <x>1</x>
+            <x>-1.0</x>
             <y>0</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
+            <x-m>6.425</x-m>
+            <y-m>0.0</y-m>
             <z-m>3.734</z-m>
         </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>pitchlink.21</object-name>
+        <property>rotors/tail/blade/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
     </animation>
 
     <animation>
@@ -698,29 +707,13 @@
         <property>rotors/tail/blade/flap-deg</property>
         <axis>
             <x>0</x>
-            <y>1</y>
+            <y>-1</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
-            <z-m>3.734</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.22</object-name>
-        <property>rotors/tail/blade[1]/position-deg</property>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>-1</z>
-        </axis>
-        <center>
-            <x-m>6.046</x-m>
-            <y-m>0</y-m>
-            <z-m>3.702</z-m>
+            <x-m>6.288</x-m>
+            <y-m>-0.253</y-m>
+            <z-m>3.733</z-m>
         </center>
     </animation>
 
@@ -729,46 +722,42 @@
         <object-name>Blade.22</object-name>
         <property>rotors/tail/blade[1]/incidence-deg</property>
         <axis>
-            <x>1</x>
-            <y>0</y>
+            <x>0.5</x>
+            <y>-0.866</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
+            <x-m>5.855</x-m>
+            <y-m>0.329</y-m>
             <z-m>3.734</z-m>
         </center>
     </animation>
 
     <animation>
+        <type>translate</type>
+        <object-name>pitchlink.22</object-name>
+        <property>rotors/tail/blade[1]/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+   <animation>
         <type>rotate</type>
         <object-name>Blade.22</object-name>
         <property>rotors/tail/blade[1]/flap-deg</property>
         <axis>
-            <x>0</x>
-            <y>1</y>
+            <x>0.866</x>
+            <y>0.5</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
+            <x-m>5.909</x-m>
+            <y-m>0.236</y-m>
             <z-m>3.734</z-m>
-        </center>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>Blade.23</object-name>
-        <property>rotors/tail/blade[2]/position-deg</property>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>-1</z>
-        </axis>
-        <center>
-            <x-m>6.046</x-m>
-            <y-m>0</y-m>
-            <z-m>3.702</z-m>
         </center>
     </animation>
 
@@ -777,29 +766,41 @@
         <object-name>Blade.23</object-name>
         <property>rotors/tail/blade[2]/incidence-deg</property>
         <axis>
-            <x>1</x>
-            <y>0</y>
-            <z>0</z>
+            <x>0.5</x>
+            <y>0.866</y>
+            <z>0.0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
+            <x-m>5.855</x-m>
+            <y-m>-0.329</y-m>
             <z-m>3.734</z-m>
         </center>
     </animation>
 
-	<animation>
+    <animation>
+        <type>translate</type>
+        <object-name>pitchlink.23</object-name>
+        <property>rotors/tail/blade[2]/incidence-deg</property>
+        <factor>0.0047</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+   <animation>
         <type>rotate</type>
         <object-name>Blade.23</object-name>
         <property>rotors/tail/blade[2]/flap-deg</property>
         <axis>
-            <x>0</x>
-            <y>1</y>
+            <x>-0.866</x>
+            <y>0.5</y>
             <z>0</z>
         </axis>
         <center>
-            <x-m>5.792</x-m>
-            <y-m>0</y-m>
+            <x-m>5.909</x-m>
+            <y-m>-0.235</y-m>
             <z-m>3.734</z-m>
         </center>
     </animation>

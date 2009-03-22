@@ -117,13 +117,8 @@ CH-47 Chinook simulation config.
     </dynamic>
   </view>
 
-        <current-view>
-            <field-of-view>65.0</field-of-view>
-        </current-view>
-
         <chase-distance-m>-35</chase-distance-m>
 
-        <turbulence-effect type = "bool">true</turbulence-effect>
         <allow-toggle-cockpit>true</allow-toggle-cockpit>
 
     <airport>
@@ -131,10 +126,6 @@ CH-47 Chinook simulation config.
             <start-offset-m>30</start-offset-m>
         </runways>
     </airport>
-
-        <hud>
-            <enable3d>false</enable3d>
-        </hud>
 
         <weight n="0">
             <name>Pilot</name>
@@ -169,6 +160,13 @@ CH-47 Chinook simulation config.
                     <binding>
                         <command>property-toggle</command>
                         <property>sim/model/start-idling</property>
+                    </binding>
+                </item>
+                <item>
+                    <label>Operate Ramp</label>
+                    <binding>
+                        <command>nasal</command>
+                        <script>CH47.ramp.toggle()</script>
                     </binding>
                 </item>
                 <item>
