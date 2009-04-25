@@ -437,7 +437,7 @@
 <animation>
         <type>rotate</type>
         <object-name>Ramp</object-name>
-        <property>controls/ramp/position-norm</property>
+        <property>sim/multiplay/generic/float</property>
         <factor>42</factor>
         <center>
             <x-m>5.203</x-m>

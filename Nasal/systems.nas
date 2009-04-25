@@ -97,6 +97,10 @@ setlistener("/sim/model/start-idling", func(idle){
     }
 },0,0);
 
+setlistener("/controls/ramp/position-norm", func(rmp){
+    setprop("sim/multiplay/generic/float",rmp.getValue());
+},1,0);
+
 var Startup = func{
 setprop("controls/electric/engine[0]/generator",1);
 setprop("controls/electric/battery-switch",1);
