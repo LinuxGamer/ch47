@@ -12,6 +12,37 @@ CH-47 Chinook simulation config.
         <status>alpha</status>
         <aircraft-version>0.1</aircraft-version>
 
+	<tags>
+		<tag>helicopter</tag>
+		<tag>boeing</tag>
+		<tag>1960s</tag>
+		<tag>1970s</tag>
+		<tag>1980s</tag>
+		<tag>1990s</tag>
+		<tag>2000s</tag>
+		<tag>2010s</tag>
+		<tag>fixed-gear</tag>
+		<tag>ifr</tag>
+		<tag>vtol</tag>
+		<tag>turboprop</tag>
+		<tag>twin-engine</tag>
+		<tag>tow</tag>
+	</tags>
+
+		
+	<previews>
+		<preview>
+			<type>exterior</type>
+			<splash type="bool">true</splash>
+			<path>Pics/chinook-exterior.jpg</path>
+		</preview>
+		<preview>
+			<type>panel</type>
+			<splash type="bool">true</splash>
+			<path>Pics/chinook-interior.jpg</path>
+		</preview>
+	</previews>
+
         <flight-model>yasim</flight-model>
         <aero>ch47d</aero>
         <fuel-fraction>0.8</fuel-fraction>
