@@ -21,6 +21,9 @@ CH-47 Chinook simulation config.
 		<tag>1990s</tag>
 		<tag>2000s</tag>
 		<tag>2010s</tag>
+		<tag>vietnam</tag>
+		<tag>gulfwar1</tag>
+		<tag>gulfwar2</tag>
 		<tag>fixed-gear</tag>
 		<tag>ifr</tag>
 		<tag>vtol</tag>
